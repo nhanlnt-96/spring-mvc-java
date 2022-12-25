@@ -4,11 +4,9 @@
     <title>Admin | Login</title>
 </head>
 <body>
-<div id="wrapper">
-    <%@include file="/resources/shared/admin-header.jsp" %>
-
+<div id="wrapper" style="width: 100vw;min-height: 100vh" class="d-flex justify-content-center align-items-center">
     <!-- Main -->
-    <div id="main">
+    <div id="main" style="width: 100%;padding-bottom: 0">
         <div class="inner">
             <h1>Login</h1>
             <form action="${pageContext.request.contextPath}/login" method="post">

@@ -28,7 +28,7 @@ public class UserController {
 
         theModel.addAttribute("users", theUsers);
 
-        return "user-list";
+        return "admin/user-list";
     }
 
     @GetMapping("/add-user")
@@ -37,20 +37,20 @@ public class UserController {
 
         theModel.addAttribute("user", theUser);
 
-        return "user-form";
+        return "admin/user-form";
     }
 
     @PostMapping("/save-user")
     public String saveUser(@Valid @ModelAttribute("user") User user, BindingResult bindingResult, Model theModel) {
         if (bindingResult.hasErrors()) {
-            return "user-form";
+            return "admin/user-form";
         } else {
             if (userService.checkEmailIsExist(user.getEmail(), user.getId())) {
                 theModel.addAttribute("duplicateEmailError", "Email already exist");
 
                 theModel.addAttribute("userData", user);
 
-                return "user-form";
+                return "admin/user-form";
             } else {
                 if (user.getId() == 0 || !user.getPassword().equals(userService.getUserById(user.getId()).getPassword())) {
                     String passwordHash = BCrypt.hashPassword(user.getPassword());
@@ -71,7 +71,7 @@ public class UserController {
 
         theModel.addAttribute("user", theUser);
 
-        return "user-form";
+        return "admin/user-form";
     }
 
     @GetMapping("/remove-user")

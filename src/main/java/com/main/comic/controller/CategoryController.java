@@ -27,7 +27,7 @@ public class CategoryController {
 
         theModel.addAttribute("categories", theCategories);
 
-        return "category-list";
+        return "admin/category-list";
     }
 
     @GetMapping("/add-category")
@@ -36,20 +36,20 @@ public class CategoryController {
 
         theModel.addAttribute("category", theCategory);
 
-        return "category-form";
+        return "admin/category-form";
     }
 
     @PostMapping("/save-category")
     public String saveCategory(@Valid @ModelAttribute("category") Category category, BindingResult bindingResult, Model theModel) {
         if (bindingResult.hasErrors()) {
-            return "category-form";
+            return "admin/category-form";
         } else {
             if (categoryService.checkCategoryIsExist(category.getCategoryName(), category.getId())) {
                 theModel.addAttribute("duplicateCategoryError", "Category already exist");
 
                 theModel.addAttribute("categoryData", category);
 
-                return "category-form";
+                return "admin/category-form";
             } else {
                 categoryService.saveCategoryData(category);
 
@@ -64,7 +64,7 @@ public class CategoryController {
 
         theModel.addAttribute("category", theCategory);
 
-        return "category-form";
+        return "admin/category-form";
     }
 
     @GetMapping("/remove-category")

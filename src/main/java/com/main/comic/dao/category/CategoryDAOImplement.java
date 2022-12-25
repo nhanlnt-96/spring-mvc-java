@@ -48,7 +48,7 @@ public class CategoryDAOImplement implements CategoryDAO {
     public boolean checkCategoryIsExist(String categoryName, int categoryId) {
         Session currentSession = sessionFactory.getCurrentSession();
 
-        Query<Category> theQuery = currentSession.createQuery("from Category where categoryName like :categoryName and id not like :categoryId", Category.class);
+        Query<Category> theQuery = currentSession.createQuery("from Category where categoryName = :categoryName and id != :categoryId", Category.class);
         theQuery.setParameter("categoryName", categoryName);
         theQuery.setParameter("categoryId", categoryId);
 

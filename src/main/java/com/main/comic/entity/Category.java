@@ -2,6 +2,7 @@ package com.main.comic.entity;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
+import java.util.Set;
 
 @Entity
 @Table(name = "categories")
@@ -13,6 +14,8 @@ public class Category {
     @Column(name = "category_name")
     @NotBlank(message = "Category Name can not be null")
     private String categoryName;
+    @OneToMany(mappedBy = "category")
+    Set<Comic> comics;
 
     public Category() {
     }

@@ -1,0 +1,91 @@
+/home/nhanlnt/Documents/personal/spring-exam/main/2022-12-22 14:05:31.259 [RMI TCP Connection(69)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+/home/nhanlnt/Documents/personal/spring-exam/main/2022-12-22 14:05:31.707 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog - MLog clients using log4j2 logging.
+/home/nhanlnt/Documents/personal/spring-exam/main/2022-12-22 14:05:31.734 [RMI TCP Connection(69)-127.0.0.1] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]
+/home/nhanlnt/Documents/personal/spring-exam/main/2022-12-22 14:05:31.835 [RMI TCP Connection(69)-127.0.0.1] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.5.6.Final
+/home/nhanlnt/Documents/personal/spring-exam/main/2022-12-22 14:05:31.991 [RMI TCP Connection(69)-127.0.0.1] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+/home/nhanlnt/Documents/personal/spring-exam/main/2022-12-22 14:05:32.104 [RMI TCP Connection(69)-127.0.0.1] INFO  com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> z8kfsxatfpviof1qvf0ey|687f3944, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> z8kfsxatfpviof1qvf0ey|687f3944, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/comic_site?useSSL=false, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 30000, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+/home/nhanlnt/Documents/personal/spring-exam/main/2022-12-22 14:05:32.249 [RMI TCP Connection(69)-127.0.0.1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+/home/nhanlnt/Documents/personal/spring-exam/main/2022-12-22 14:05:32.494 [RMI TCP Connection(69)-127.0.0.1] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.21.Final
+/home/nhanlnt/Documents/personal/spring-exam/main/2022-12-22 14:05:33.020 [RMI TCP Connection(69)-127.0.0.1] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+/home/nhanlnt/Documents/personal/spring-exam/main/2022-12-22 14:05:33.460 [RMI TCP Connection(69)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2194 ms
+/home/nhanlnt/Documents/personal/spring-exam/main/2022-12-22 14:05:51.520 [http-nio-8080-exec-123] ERROR org.springframework.web.servlet.tags.form.OptionsTag - Type [com.main.comic.entity.Category] is not valid for option items
+javax.servlet.jsp.JspException: Type [com.main.comic.entity.Category] is not valid for option items
+	at org.springframework.web.servlet.tags.form.OptionWriter.writeOptions(OptionWriter.java:147) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.tags.form.OptionsTag.writeTagContent(OptionsTag.java:317) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.tags.form.AbstractFormTag.doStartTagInternal(AbstractFormTag.java:87) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.tags.RequestContextAwareTag.doStartTag(RequestContextAwareTag.java:83) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.apache.jsp.WEB_002dINF.view.admin.comic_002dform_jsp._jspx_meth_form_005foptions_005f0(comic_002dform_jsp.java:1036) ~[?:?]
+	at org.apache.jsp.WEB_002dINF.view.admin.comic_002dform_jsp._jspx_meth_c_005fforEach_005f0(comic_002dform_jsp.java:991) ~[?:?]
+	at org.apache.jsp.WEB_002dINF.view.admin.comic_002dform_jsp._jspService(comic_002dform_jsp.java:333) ~[?:?]
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70) ~[jasper.jar:9.0.68]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[servlet-api.jar:4.0.FR]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466) ~[jasper.jar:9.0.68]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379) ~[jasper.jar:9.0.68]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327) ~[jasper.jar:9.0.68]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[catalina.jar:9.0.68]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[catalina.jar:9.0.68]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-websocket.jar:9.0.68]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[catalina.jar:9.0.68]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[catalina.jar:9.0.68]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711) ~[catalina.jar:9.0.68]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459) ~[catalina.jar:9.0.68]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385) ~[catalina.jar:9.0.68]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313) ~[catalina.jar:9.0.68]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:171) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:316) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1397) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1142) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670) ~[servlet-api.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[catalina.jar:9.0.68]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[catalina.jar:9.0.68]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-websocket.jar:9.0.68]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterCha/home/nhanlnt/Documents/personal/spring-exam/main/2022-12-22 15:11:34.914 [RMI TCP Connection(120)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+/home/nhanlnt/Documents/personal/spring-exam/main/2022-12-22 15:11:35.394 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog - MLog clients using log4j2 logging.
+/home/nhanlnt/Documents/personal/spring-exam/main/2022-12-22 15:11:35.418 [RMI TCP Connection(120)-127.0.0.1] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]
+/home/nhanlnt/Documents/personal/spring-exam/main/2022-12-22 15:11:35.554 [RMI TCP Connection(120)-127.0.0.1] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.5.6.Final
+/home/nhanlnt/Documents/personal/spring-exam/main/2022-12-22 15:11:35.793 [RMI TCP Connection(120)-127.0.0.1] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+/home/nhanlnt/Documents/personal/spring-exam/main/2022-12-22 15:11:35.921 [RMI TCP Connection(120)-127.0.0.1] INFO  com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> z8kfsxatfs8h2s11gfzbb|4a9a002a, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> z8kfsxatfs8h2s11gfzbb|4a9a002a, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/comic_site?useSSL=false, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 30000, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+/home/nhanlnt/Documents/personal/spring-exam/main/2022-12-22 15:11:36.089 [RMI TCP Connection(120)-127.0.0.1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+/home/nhanlnt/Documents/personal/spring-exam/main/2022-12-22 15:11:36.377 [RMI TCP Connection(120)-127.0.0.1] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.21.Final
+/home/nhanlnt/Documents/personal/spring-exam/main/2022-12-22 15:11:36.936 [RMI TCP Connection(120)-127.0.0.1] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+/home/nhanlnt/Documents/personal/spring-exam/main/2022-12-22 15:11:37.415 [RMI TCP Connection(120)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2496 ms
+/home/nhanlnt/Documents/personal/spring-exam/main/2022-12-22 15:11:42.310 [http-nio-8080-exec-234] ERROR org.springframework.web.servlet.tags.form.SelectTag - Invalid property 'category' of bean class [com.main.comic.entity.Comic]: Bean property 'category' is not readable or has an invalid getter method: Does the return type of the getter match the parameter type of the setter?
+org.springframework.beans.NotReadablePropertyException: Invalid property 'category' of bean class [com.main.comic.entity.Comic]: Bean property 'category' is not readable or has an invalid getter method: Does the return type of the getter match the parameter type of the setter?
+	at org.springframework.beans.AbstractNestablePropertyAccessor.getPropertyValue(AbstractNestablePropertyAccessor.java:627) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.AbstractNestablePropertyAccessor.getPropertyValue(AbstractNestablePropertyAccessor.java:617) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.validation.AbstractPropertyBindingResult.getActualFieldValue(AbstractPropertyBindingResult.java:104) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.validation.AbstractBindingResult.getFieldValue(AbstractBindingResult.java:228) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.support.BindStatus.<init>(BindStatus.java:129) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.tags.form.AbstractDataBoundFormElementTag.getBindStatus(AbstractDataBoundFormElementTag.java:178) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.tags.form.AbstractDataBoundFormElementTag.getPropertyPath(AbstractDataBoundFormElementTag.java:199) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.tags.form.AbstractDataBoundFormElementTag.getName(AbstractDataBoundFormElementTag.java:164) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.tags.form.AbstractDataBoundFormElementTag.autogenerateId(AbstractDataBoundFormElementTag.java:149) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.tags.form.AbstractDataBoundFormElementTag.resolveId(AbstractDataBoundFormElementTag.java:139) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.tags.form.AbstractDataBoundFormElementTag.writeDefaultAttributes(AbstractDataBoundFormElementTag.java:122) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.tags.form.AbstractHtmlElementTag.writeDefaultAttributes(AbstractHtmlElementTag.java:460) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.tags.form.SelectTag.writeTagContent(SelectTag.java:405) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.tags.form.AbstractFormTag.doStartTagInternal(AbstractFormTag.java:87) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.tags.RequestContextAwareTag.doStartTag(RequestContextAwareTag.java:83) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.apache.jsp.WEB_002dINF.view.admin.comic_002dform_jsp._jspService(comic_002dform_jsp.java:275) ~[?:?]
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70) ~[jasper.jar:9.0.68]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[servlet-api.jar:4.0.FR]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466) ~[jasper.jar:9.0.68]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379) ~[jasper.jar:9.0.68]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327) ~[jasper.jar:9.0.68]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[catalina.jar:9.0.68]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[catalina.jar:9.0.68]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-websocket.jar:9.0.68]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[catalina.jar:9.0.68]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[catalina.jar:9.0.68]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711) ~[catalina.jar:9.0.68]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459) ~[catalina.jar:9.0.68]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385) ~[catalina.jar:9.0.68]
+	at org.apache.catalina.core.ApplicationDispatch

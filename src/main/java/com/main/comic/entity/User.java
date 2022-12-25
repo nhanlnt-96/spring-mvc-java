@@ -5,6 +5,7 @@ import org.hibernate.validator.constraints.Length;
 import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
+import java.util.Set;
 
 @Entity
 @Table(name = "users")
@@ -23,15 +24,22 @@ public class User {
     @Column(name = "password")
     @Length(min = 6, message = "Password length must be at least 6 character")
     private String password;
+    @Column(name = "enabled", columnDefinition = "true")
+    private boolean enabled;
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(name = "users_roles", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
+    private Set<Role> roles;
 
     public User() {
     }
 
-    public User(int id, String fullName, String email, String password) {
+    public User(int id, String fullName, String email, String password, boolean enabled, Set<Role> roles) {
         this.id = id;
         this.fullName = fullName;
         this.email = email;
         this.password = password;
+        this.enabled = enabled;
+        this.roles = roles;
     }
 
     public int getId() {
@@ -66,8 +74,24 @@ public class User {
         this.password = password;
     }
 
+    public boolean isEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(boolean enabled) {
+        this.enabled = enabled;
+    }
+
+    public Set<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(Set<Role> roles) {
+        this.roles = roles;
+    }
+
     @Override
     public String toString() {
-        return "User{" + "id=" + id + ", fullName='" + fullName + '\'' + ", email='" + email + '\'' + ", password='" + password + '\'' + '}';
+        return "User{" + "id=" + id + ", fullName='" + fullName + '\'' + ", email='" + email + '\'' + ", password='" + password + '\'' + ", enabled=" + enabled + ", roles=" + roles + '}';
     }
 }
