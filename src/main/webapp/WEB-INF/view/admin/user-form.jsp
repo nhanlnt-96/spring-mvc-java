@@ -15,12 +15,12 @@
                 <form:hidden path="id"/>
                 <div class="fields">
                     <div class="field half">
-                        <form:input path="fullName" name="fullName" placeholder="Full Name"/>
+                        <form:input path="fullName" placeholder="Full Name"/>
                         <form:errors path="fullName" cssClass="alert-danger"/>
                     </div>
 
                     <div class="field half">
-                        <form:input path="email" name="email" placeholder="Email"/>
+                        <form:input path="email" placeholder="Email"/>
                         <form:errors path="email" cssClass="alert-danger"/>
                     </div>
 

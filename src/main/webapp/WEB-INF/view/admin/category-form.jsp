@@ -15,7 +15,7 @@
                 <form:hidden path="id"/>
                 <div class="fields">
                     <div class="field half">
-                        <form:input path="categoryName" name="categoryName" placeholder="Category Name"/>
+                        <form:input path="categoryName" placeholder="Category Name"/>
                         <form:errors path="categoryName" cssClass="alert-danger"/>
                     </div>
 
