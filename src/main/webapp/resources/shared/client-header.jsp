@@ -2,8 +2,8 @@
 <header id="header">
     <div class="inner">
         <!-- Logo -->
-        <a href="<c:url value="/admin/comic/comic-list"/>" class="logo">
-            <span class="fa fa-book"></span> <span class="title">Free Comic Online Website | Admin</span>
+        <a href="<c:url value="/"/>" class="logo">
+            <span class="fa fa-book"></span> <span class="title">Free Comic Online Website</span>
         </a>
         <!-- Nav -->
         <nav>
